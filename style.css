@@ -1,0 +1,335 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.toolbar {
+    margin-left: 50px; 
+}
+
+/* Colors Vermells */
+.toolbar button {
+  height: 30px;
+  width: 50px;
+  color: #FFFFFF;
+  background-color: #ff9999;
+  border: 1px solid #cc0000; 
+  border-radius: 6px;
+  transition: all 0.6s;
+  box-shadow: 6px 6px 5px #ffcccc;
+  cursor: pointer;
+  outline: none;
+  margin: 5px;
+}
+
+.toolbar input {
+  height: 26.5px;
+  width: 70px;
+  color: #5e0000;
+  background-color: #fff0f0;
+  border: 1px solid #e74c3c;
+  border-radius: 6px;
+  transition: all 0.6s;
+  box-shadow: 6px 6px 5px #fff5f5;
+  cursor: text;
+  outline: none;
+  margin: 5px;
+}
+
+.toolbar button:hover {
+  background-color: #ff4d4d;
+  border-color: #e74c3c;
+  transition: all inherit;
+  transform: translateY(-2px);
+  box-shadow: 6px 6px 5px #ffb3b3;
+}
+
+.toolbar button:active {
+  background-color: #b30000;
+  border-color: #8c0000;
+  transition: all 0.3s;
+  transform: translateY(4px);
+  box-shadow: 2px 2px 2px #ffb3b3;
+}
+
+.toolbar button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.toolbar button img {
+    height: 18px;
+    width: auto;
+}
+
+#inp_name {
+  height: 26.5px;
+  width: 70px;
+  color: #8d0000;
+  background-color: #fffbfb;
+  border: 1px solid #fda6a6;
+  border-radius: 6px;
+  transition: all 0.6s;
+  box-shadow: 6px 6px 5px #fdf3f3;
+  cursor: text;
+  outline: none;
+  margin: 5px;
+}
+
+#inp_name:focus {
+  height: 26.5px;
+  width: 180px;
+  color: #710000;
+  background-color: #ffa7a7;
+  border: 1px solid #ff6868;
+  border-radius: 6px;
+  transition: all 0.6s;
+  box-shadow: 6px 6px 5px #f7e0e0;
+  cursor: text;
+  outline: none;
+  margin: 5px;
+}
+
+h1 {
+    font-family: 'Comfortaa', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    color: #2c3e50;
+    margin-top: 50px;
+    letter-spacing: -1px;
+}
+
+.toolbar-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 40px 0;
+}
+
+.toolbar-menu button {
+    height: 40px;
+    padding: 0 20px;
+    color: #FFFFFF;
+    background-color: #ff9999;
+    border: 1px solid #cc0000;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 4px 4px 0px #ffcccc;
+    outline: none;
+}
+
+#btn_new_doc {
+    background-color: #e74c3c;
+    box-shadow: 4px 4px 0px #b30000;
+}
+
+.toolbar-menu button:hover {
+    background-color: #ff4d4d;
+    transform: translateY(-2px);
+    box-shadow: 6px 6px 0px #ffb3b3;
+}
+
+.toolbar-menu button:active {
+    transform: translateY(2px);
+    box-shadow: 2px 2px 0px #ffb3b3;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    border: 2px solid #fff0f0;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+    border-color: #e74c3c;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(231, 76, 60, 0.15);
+}
+
+.card .icon {
+    font-size: 40px;
+    filter: drop-shadow(2px 2px 0px #ff9999);
+}
+
+.card span {
+    font-size: 14px;
+    color: #2c3e50;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* --- TO-DO LIST ESTILS --- */
+.main-card {
+    width: 80%;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    min-height: 500px;
+    border-radius: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background: #fffafa;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border-left: 4px solid #e74c3c;
+}
+
+li:hover {
+    background: #fcebeb;
+}
+
+.task-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Verdana', sans-serif;
+    color: #2d3436;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #b30000;
+}
+
+input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    color: #b2bec3;
+}
+
+.delete-btn {
+    background-color: #ff7675;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 0 #d63031;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.delete-btn:hover {
+    background-color: #d63031;
+    transform: scale(1.05);
+}
+
+.delete-btn:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+/* --- DARK MODE --- */
+
+#btn_dark_mode {
+    background-color: #ffdcdc;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body.dark-mode h1 {
+    color: #ff9999; 
+}
+
+body.dark-mode .main-card {
+    background-color: #2d2d2d;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode li {
+    background-color: #3d3d3d;
+    border-left-color: #b30000;
+}
+
+body.dark-mode li:hover {
+    background-color: #4a4a4a;
+}
+
+body.dark-mode .task-content {
+    color: #e0e0e0;
+}
+
+body.dark-mode .card {
+    background: #2d2d2d;
+    border-color: #3d3d3d;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .card span {
+    color: #e0e0e0;
+}
+
+body.dark-mode .card:hover {
+    border-color: #e74c3c;
+    background: #363636;
+}
+
+/* DARK MODE CORRECTIONS FOR RED TOOLBAR */
+body.dark-mode .toolbar button,
+body.dark-mode .toolbar input {
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+    border-color: #7a2b2b; 
+}
+
+#inp_name {
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .toolbar button:hover {
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode .toolbar button:active {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+body.dark-mode .toolbar input {
+    background-color: #ebd1d1; 
+    color: #4d0000;
+}
+
+#add-input:focus {
+    width: 250px !important;
+}
