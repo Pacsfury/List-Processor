@@ -48,7 +48,6 @@ btnNew.addEventListener("click", async () => {
         const fileHandle = await directoryHandle.getFileHandle(fileName, { create: true });
         const writable = await fileHandle.createWritable();
         
-        // Estructura buida inicial per a la llista
         const initialHTML = ``;
         await writable.write(new Blob([initialHTML], { type: 'text/html;charset=utf-8' }));
         await writable.close();
@@ -66,7 +65,6 @@ async function refreshFileList() {
         if (entry.kind === 'file' && entry.name.endsWith('.html')) {
             const card = document.createElement("button");
             card.className = "card";
-            // Aquí el check (✅) només pel menú
             card.innerHTML = `<div class="icon">✅</div><span>${entry.name.replace('.html', '')}</span>`;
             
             card.onclick = async () => {
