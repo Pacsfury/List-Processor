@@ -12,7 +12,6 @@ window.onload = () => {
     if (content) {
         items_list.innerHTML = content;
         
-        // Reactivar els botons d'eliminar en carregar el fitxer
         const deleteBtns = items_list.querySelectorAll(".delete-btn");
         deleteBtns.forEach(btn => {
             btn.onclick = function() {
@@ -31,8 +30,7 @@ window.onload = () => {
 btn_home.addEventListener("click", async () => {
     const oldFileName = localStorage.getItem('currentFileName');
     const newFileName = inp_name.value + ".html";
-    
-    // Guardem exclusivament l'interior del UL
+
     const contentToSave = items_list.innerHTML; 
 
     const request = indexedDB.open("Docs", 3);

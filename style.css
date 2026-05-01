@@ -6,7 +6,6 @@ html {
     margin-left: 100px; 
 }
 
-/* Colors Vermells */
 .toolbar button {
   height: 30px;
   width: 50px;
@@ -178,7 +177,7 @@ h1 {
     text-align: center;
 }
 
-/* --- TO-DO LIST ESTILS --- */
+/* --- TO-DO LIST STYLES --- */
 .main-card {
     width: 80%;
     margin: 20px auto;
